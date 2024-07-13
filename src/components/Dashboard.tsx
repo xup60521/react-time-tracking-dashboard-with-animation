@@ -50,7 +50,7 @@ export default function Dashboard({
                                             className="scale-[0.65] translate-y-1"
                                         />
                                     </div>
-                                    <div className="flex-grow bg-n_dark_blue md:rounded-lg rounded-2xl flex flex-col px-5 md:py-5 py-4">
+                                    <div className="flex-grow bg-n_dark_blue md:rounded-t-lg rounded-t-2xl flex flex-col px-5 md:py-5 py-4">
                                         <div className="flex items-center justify-between">
                                             <span className="text-white md:text-xs font-semibold">
                                                 {item.title}
