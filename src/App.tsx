@@ -12,14 +12,17 @@ export default function App() {
                         <Routes>
                             <Route
                                 path="/"
+                                key="route daily"
                                 element={<Dashboard timeSpan="daily" />}
                             />
                             <Route
                                 path="/weekly"
+                                key="route weekly"
                                 element={<Dashboard timeSpan="weekly" />}
                             />
                             <Route
                                 path="/monthly"
+                                key="route monthly"
                                 element={<Dashboard timeSpan="monthly" />}
                             />
                         </Routes>
