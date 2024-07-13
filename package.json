@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "framer-motion": "^11.3.2",
@@ -32,5 +31,7 @@
     "tailwindcss": "^3.4.4",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
-  }
+  },
+  "homepage": "https://xup60521.github.io/react-time-tracking-dashboard-with-animation",
+  "packageManager": "pnpm@9.5.0"
 }
