@@ -2,6 +2,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import Nav from "./components/Nav";
 import Dashboard from "./components/Dashboard";
 
+
 export default function App() {
     return (
         <HashRouter>
@@ -12,18 +13,33 @@ export default function App() {
                         <Routes>
                             <Route
                                 path="/"
-                                key="route daily"
-                                element={<Dashboard timeSpan="daily" />}
+                                element={
+                                    <Dashboard
+                                        timeSpan="daily"
+                                        key="route"
+                                        // setAllowNavigation={setAllowNavigation}
+                                    />
+                                }
                             />
                             <Route
                                 path="/weekly"
-                                key="route weekly"
-                                element={<Dashboard timeSpan="weekly" />}
+                                element={
+                                    <Dashboard
+                                        timeSpan="weekly"
+                                        key="route"
+                                        // setAllowNavigation={setAllowNavigation}
+                                    />
+                                }
                             />
                             <Route
                                 path="/monthly"
-                                key="route monthly"
-                                element={<Dashboard timeSpan="monthly" />}
+                                element={
+                                    <Dashboard
+                                        timeSpan="monthly"
+                                        key="route"
+                                        // setAllowNavigation={setAllowNavigation}
+                                    />
+                                }
                             />
                         </Routes>
                     </div>
