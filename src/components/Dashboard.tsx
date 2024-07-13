@@ -10,7 +10,7 @@ export default function Dashboard({
 }) {
     return (
         <Fragment>
-            <AnimatePresence>
+            <AnimatePresence key={`animate presence`}>
                 <div
                     className="w-full md:h-full absolute md:px-4 md:grid md:grid-cols-3 grid-rows-6 grid-cols-1 md:grid-rows-2 md:gap-4 gap-[10.5rem] md:p-0 pb-16"
                     key={timeSpan}
