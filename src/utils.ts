@@ -1,3 +1,10 @@
+import WorkIcon from "@/assets/images/icon-work.svg";
+import PlayIcon from "@/assets/images/icon-play.svg";
+import StudyIcon from "@/assets/images/icon-study.svg";
+import ExerciseIcon from "@/assets/images/icon-exercise.svg";
+import SocialIcon from "@/assets/images/icon-social.svg";
+import SelfCareIcon from "@/assets/images/icon-self-care.svg";
+
 export const data = [
     {
         title: "Work",
@@ -102,3 +109,34 @@ export const data = [
         },
     },
 ];
+
+export function getColorAndImage(
+    title:
+        | "Work"
+        | "Play"
+        | "Study"
+        | "Exercise"
+        | "Social"
+        | "Self Care"
+        | string
+) {
+    if (title === "Work") {
+        return { className: "bg-p_work_light_red", image: WorkIcon };
+    }
+    if (title === "Play") {
+        return { className: "bg-p_play_soft_blue", image: PlayIcon };
+    }
+    if (title === "Study") {
+        return { className: "bg-p_study_light_red", image: StudyIcon };
+    }
+    if (title === "Exercise") {
+        return { className: "bg-p_exercise_lime_green", image: ExerciseIcon };
+    }
+    if (title === "Social") {
+        return { className: "bg-p_social_violet", image: SocialIcon };
+    }
+    if (title === "Self Care") {
+        return { className: "bg-p_selfcare_soft_orange", image: SelfCareIcon };
+    }
+    return { className: "", image: "" };
+}
