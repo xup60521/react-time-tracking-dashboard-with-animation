@@ -31,14 +31,14 @@ export default function Dashboard({
                                 >
                                     <motion.div
                                         key={`${timeSpan} ${index}`}
-                                        initial={{ opacity: 0, y: 20 }}
+                                        initial={{ opacity: 0, x: -20 }}
                                         animate={{
                                             opacity: 1,
-                                            y: 0,
-                                            transition: { delay: 0.05 * (index + 1) + 0.2 },
+                                            x: 0,
+                                            transition: { delay: 0.05 * (index + 1) + 0.15 },
                                         }}
-                                        exit={{ opacity: 0, y: -20 }}
-                                        transition={{ delay: 0.05 * index }}
+                                        exit={{ opacity: 0, x: 20 }}
+                                        transition={{ delay: 0.05 * index, type: "spring" }}
                                         className={`${
                                             getColorAndImage(item.title)
                                                 .className
